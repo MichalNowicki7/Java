@@ -11,7 +11,7 @@ public class Main2 {
 
         Triangle triangle = new Triangle(14, 6);
 
-        Triangle triangle2 = new Triangle(14, 7, 10);
+        TriangleSides triangleSides = new TriangleSides(14, 6, 10, 7);
 
         //System.out.println(Math.sqrt(pow + power));
         Main2.napiszDupa();
@@ -27,28 +27,28 @@ public class Main2 {
         double distanceFrom = point4.distanceFrom(point2);
         System.out.println(distanceFrom);
 
-        double circularField = radius.circularField(radius);
+        double circularField = circle.field();
         System.out.println(circularField);
 
-        double circumference = radius.circumference(radius);
+        double circumference = radius.circumference();
         System.out.println(circumference);
 
-        double squareArea = side.squareArea(side);
+        double squareArea = side.squareArea();
         System.out.println(squareArea);
 
-        double squarePerimeter = side.squarePerimeter(side);
+        double squarePerimeter = side.squarePerimeter();
         System.out.println(squarePerimeter);
 
-        double rectArea = sides.rectArea(sides);
+        double rectArea = sides.rectArea();
         System.out.println(rectArea);
 
-        double rectPerimeter = sides.rectPerimeter(sides);
+        double rectPerimeter = sides.rectPerimeter();
         System.out.println(rectPerimeter);
 
-        double triArea = triangle.triArea(triangle);
+        double triArea = triangle.triArea();
         System.out.println(triArea);
 
-        double triPerimeter = triangle2.triPerimeter(triangle2);
+        double triPerimeter = triangleSides.triPerimeter();
         System.out.println(triPerimeter);
 
         System.out.println(poleKola(radius));
@@ -69,13 +69,13 @@ public class Main2 {
     }
     static double poleKola(Circle radius) {
 
-        double circularField = radius.circularField(radius);
+        double circularField = radius.circularField();
 
         return circularField;
     }
     static double obwodKola(Circle radius) {
 
-        double circumference = radius.circumference(radius);
+        double circumference = radius.circumference();
 
         return circumference;
     }

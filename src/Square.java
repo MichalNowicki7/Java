@@ -4,10 +4,10 @@ public class Square {
     public Square(double a) {
         this.a = a;
     }
-    public double squareArea (Square side) {
-        return Math.pow(side.a, 2);
+    public double squareArea () {
+        return Math.pow(this.a, 2);
     }
-    public double squarePerimeter (Square side) {
-        return Math.abs(4 * side.a);
+    public double squarePerimeter () {
+        return Math.abs(4 * this.a);
     }
 }

@@ -4,18 +4,18 @@ public class Circle {
     public Circle(double r) {
         this.r = r;
     }
-    public double circularField (Circle radius) {
+    public double circularField () {
 
-        double field = Math.pow(radius.r, 2);
+        double field = Math.pow(this.r, 2);
         double pi = Math.PI;
 
         return Math.abs(field * pi);
     }
-    public double circumference (Circle radius) {
+    public double circumference () {
 
         double pi = Math.PI;
 
-        return Math.abs(2 * radius.r * pi);
+        return Math.abs(2 * this.r * pi);
     }
 }
 
