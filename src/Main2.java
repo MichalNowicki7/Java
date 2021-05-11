@@ -3,15 +3,13 @@ public class Main2 {
         Point point1 = new Point(100, 100);
         Point point2 = new Point(50, 50);
 
-        Circle radius = new Circle(10);
+        Circle circle = new Circle(10);
 
-        Square side = new Square(5);
+        Square square = new Square(5);
 
-        Rectangle sides = new Rectangle(7,4);
+        Rectangle rect = new Rectangle(7,4);
 
-        Triangle triangle = new Triangle(14, 6);
-
-        TriangleSides triangleSides = new TriangleSides(14, 6, 10, 7);
+        Triangle triangle = new Triangle(14, 6, 10, 7);
 
         //System.out.println(Math.sqrt(pow + power));
         Main2.napiszDupa();
@@ -27,33 +25,33 @@ public class Main2 {
         double distanceFrom = point4.distanceFrom(point2);
         System.out.println(distanceFrom);
 
-        double circularField = circle.field();
-        System.out.println(circularField);
+        double circleField = circle.field();
+        System.out.println(circleField);
 
-        double circumference = radius.circumference();
-        System.out.println(circumference);
+        double circlePerimeter = circle.perimeter();
+        System.out.println(circlePerimeter);
 
-        double squareArea = side.squareArea();
-        System.out.println(squareArea);
+        double squareField = square.field();
+        System.out.println(squareField);
 
-        double squarePerimeter = side.squarePerimeter();
+        double squarePerimeter = square.perimeter();
         System.out.println(squarePerimeter);
 
-        double rectArea = sides.rectArea();
-        System.out.println(rectArea);
+        double rectField = rect.field();
+        System.out.println(rectField);
 
-        double rectPerimeter = sides.rectPerimeter();
+        double rectPerimeter = rect.perimeter();
         System.out.println(rectPerimeter);
 
-        double triArea = triangle.triArea();
-        System.out.println(triArea);
+        double triangleField = triangle.field();
+        System.out.println(triangleField);
 
-        double triPerimeter = triangleSides.triPerimeter();
-        System.out.println(triPerimeter);
+        double trianglePerimeter = triangle.perimeter();
+        System.out.println(trianglePerimeter);
 
-        System.out.println(poleKola(radius));
+        System.out.println(poleKola(circle));
 
-        obwodKola(radius);
+        obwodKola(circle);
     }
     static void napiszDupa() {
         System.out.println("Dupa");
@@ -67,17 +65,17 @@ public class Main2 {
 
 
     }
-    static double poleKola(Circle radius) {
+    static double poleKola(Circle circle) {
 
-        double circularField = radius.circularField();
+        double circleField = circle.field();
 
-        return circularField;
+        return circleField;
     }
-    static double obwodKola(Circle radius) {
+    static double obwodKola(Circle circle) {
 
-        double circumference = radius.circumference();
+        double circlePerimeter = circle.perimeter();
 
-        return circumference;
+        return circlePerimeter;
     }
 
 

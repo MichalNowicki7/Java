@@ -1,4 +1,4 @@
-public class TriangleSides extends Triangle {
+/*public class TriangleSides extends Triangle {
     private double b;
     private double c;
 
@@ -10,4 +10,4 @@ public class TriangleSides extends Triangle {
     public double triPerimeter() {
         return Math.abs(super.getA() + this.b + this.c);
     }
-}
+}*/

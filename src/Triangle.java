@@ -1,9 +1,28 @@
-public class Triangle {
+public class Triangle implements Figure {
 
     private double a;
     private double h;
+    private double b;
+    private double c;
 
-    public double getA() {
+    public Triangle(double a, double h, double b, double c) {
+        this.a = a;
+        this.h = h;
+        this.b = b;
+        this.c = c;
+    }
+
+    @Override
+    public double field() {
+        return Math.abs((this.a * this.h) * 0.5);
+    }
+
+    @Override
+    public double perimeter() {
+        return Math.abs(this.a + this.b + this.c);
+    }
+
+    /*public double getA() {
         return a;
     }
 
@@ -27,6 +46,6 @@ public class Triangle {
     public double triArea () {
         return Math.abs((this.a * this.h) * 0.5);
 
-    }
+    }*/
 
 }
