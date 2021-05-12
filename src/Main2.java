@@ -52,6 +52,14 @@ public class Main2 {
         System.out.println(poleKola(circle));
 
         obwodKola(circle);
+
+        dodajPola(circle, square, rect, triangle);
+
+        System.out.println(dodajPola(circle, square, rect, triangle));
+
+        double dodajPola = dodajPola(circle, square, rect, triangle);
+        System.out.println(dodajPola);
+
     }
     static void napiszDupa() {
         System.out.println("Dupa");
@@ -76,6 +84,10 @@ public class Main2 {
         double circlePerimeter = circle.perimeter();
 
         return circlePerimeter;
+    }
+    static double dodajPola(Circle circle, Square square, Rectangle rect, Triangle triangle) {
+        return Math.abs(circle.field() + square.field() + rect.field() + triangle.field());
+
     }
 
 
