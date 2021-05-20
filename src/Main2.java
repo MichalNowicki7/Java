@@ -1,3 +1,8 @@
+import figures.Circle;
+import figures.Rectangle;
+import figures.Square;
+import figures.Triangle;
+
 public class Main2 {
     public static void main(String[] args) {
         Point point1 = new Point(100, 100);

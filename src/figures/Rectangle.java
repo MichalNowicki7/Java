@@ -1,4 +1,6 @@
-public class Rectangle implements Figure {
+package figures;
+
+public class Rectangle extends AbstractFigure {
     private double a;
     private double b;
 

@@ -1,4 +1,6 @@
-public class Circle implements Figure {
+package figures;
+
+public class Circle extends AbstractFigure {
     private double r;
     private double pi = Math.PI;
 
@@ -15,6 +17,20 @@ public class Circle implements Figure {
     public double perimeter() {
         return Math.abs(2 * this.r * pi);
     }
+}
+    /*public figures.Circle(double r) {
+        this.r = r;
+    }
+
+    @Override
+    public double field() {
+        return Math.abs(Math.pow(this.r, 2) * pi);
+    }
+
+    @Override
+    public double perimeter() {
+        return Math.abs(2 * this.r * pi);
+    }*/
 
     /*public double circularField () {
 
@@ -29,5 +45,5 @@ public class Circle implements Figure {
 
         return Math.abs(2 * this.r * pi);
     }*/
-}
+
 

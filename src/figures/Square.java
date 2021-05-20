@@ -1,4 +1,6 @@
-public class Square implements Figure {
+package figures;
+
+public class Square extends AbstractFigure {
 
     private double a;
 

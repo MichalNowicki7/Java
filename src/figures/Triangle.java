@@ -1,4 +1,6 @@
-public class Triangle implements Figure {
+package figures;
+
+public class Triangle extends AbstractFigure {
 
     private double a;
     private double h;
@@ -38,7 +40,7 @@ public class Triangle implements Figure {
         this.h = h;
     }
 
-    public Triangle(double a, double h) {
+    public figures.Triangle(double a, double h) {
         this.a = a;
         this.h = h;
     }

@@ -1,4 +1,4 @@
-/*public class TriangleSides extends Triangle {
+/*public class TriangleSides extends figures.Triangle {
     private double b;
     private double c;
 
