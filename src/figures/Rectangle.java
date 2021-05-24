@@ -1,6 +1,6 @@
 package figures;
 
-public class Rectangle extends AbstractFigure {
+public class Rectangle implements Figure {
     private double a;
     private double b;
 
@@ -11,12 +11,12 @@ public class Rectangle extends AbstractFigure {
     }
     @Override
     public double field() {
-        return Math.abs(this.a * this.b);
+        return this.a * this.b;
     }
 
     @Override
     public double perimeter() {
-        return Math.abs(2 * this.a + 2 * this.b);
+        return 2 * this.a + 2 * this.b;
     }
 
 

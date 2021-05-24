@@ -1,6 +1,6 @@
 package figures;
 
-public class Square extends AbstractFigure {
+public class Square implements Figure {
 
     private double a;
 
@@ -15,7 +15,7 @@ public class Square extends AbstractFigure {
 
     @Override
     public double perimeter() {
-        return Math.abs(4 * this.a);
+        return 4 * this.a;
     }
 
 

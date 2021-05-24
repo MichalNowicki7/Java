@@ -1,6 +1,6 @@
 package figures;
 
-public class Triangle extends AbstractFigure {
+public class Triangle implements Figure {
 
     private double a;
     private double h;
@@ -16,12 +16,12 @@ public class Triangle extends AbstractFigure {
 
     @Override
     public double field() {
-        return Math.abs((this.a * this.h) * 0.5);
+        return (this.a * this.h) * 0.5;
     }
 
     @Override
     public double perimeter() {
-        return Math.abs(this.a + this.b + this.c);
+        return this.a + this.b + this.c;
     }
 
     /*public double getA() {

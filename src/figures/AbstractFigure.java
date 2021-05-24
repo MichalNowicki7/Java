@@ -1,6 +1,6 @@
 package figures;
 
-public abstract class AbstractFigure implements Figure {
+/*public abstract class AbstractFigure implements Figure {
     protected double field;
     protected double perimeter;
 
@@ -14,4 +14,4 @@ public abstract class AbstractFigure implements Figure {
     public double perimeter() {
         return this.perimeter;
     }
-}
+}*/

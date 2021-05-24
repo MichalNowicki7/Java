@@ -1,6 +1,6 @@
 package figures;
 
-public class Circle extends AbstractFigure {
+public class Circle implements Figure {
     private double r;
     private double pi = Math.PI;
 
@@ -10,12 +10,12 @@ public class Circle extends AbstractFigure {
 
     @Override
     public double field() {
-        return Math.abs(Math.pow(this.r, 2) * pi);
+        return Math.pow(this.r, 2) * pi;
     }
 
     @Override
     public double perimeter() {
-        return Math.abs(2 * this.r * pi);
+        return 2 * this.r * pi;
     }
 }
     /*public figures.Circle(double r) {
